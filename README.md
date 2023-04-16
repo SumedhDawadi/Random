@@ -38,14 +38,12 @@ find / -perm -u=s -type f 2>/dev/null
 export TERM=xterm
 ```
 ### Auto-complete fuction after gettting shell
-
+```bash
+stty raw - echo ; fg 
+```
 ### Abusing SUID 
 ```bash
 find / -type f -perm -4001 -exec ls -h {} \; 2> /dev/null
-```
-### Find command to find flags
-```bash
-stty raw - echo ; fg 
 ```
 ### Find Flags
 ```bash
