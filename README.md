@@ -58,3 +58,50 @@ curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 → chmod +x linpeas.sh 
 → ./linpeas.sh
 ```
+###  𝐖𝐡𝐚𝐭 𝐝𝐨𝐞𝐬 𝐃𝐞𝐯𝐒𝐞𝐜𝐎𝐩𝐬 𝐂𝐈/𝐂𝐃 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 𝐥𝐨𝐨𝐤 𝐥𝐢𝐤𝐞?
+
+```bash
+
+🔹 1- 𝐏𝐥𝐚𝐧/𝐃𝐞𝐬𝐢𝐠𝐧
+1.1 Threat modeling:
+1.2 Secure SDLC
+
+🔹2-𝐃𝐞𝐯𝐞𝐥𝐨𝐩
+The Development stage starts with writing code and we can use shift-left security best practice which incorporates security thinking in the earliest stages of development.
+
+2.1-Install linting tools inside the code editor like Visual Studio Code. One of the most popular linting tools is SonarLint. Which highlights bugs and security vulnerabilities as you write code.
+-Use Pre-commit hooks to prevent adding any secrets to code.
+-Setup Protected branch and code reviews process.
+-Sign git commit with GPG key.
+-Always verify the downloaded binary/file hash.
+-Enable 2-factor authentication.
+
+🔹3-𝐁𝐮𝐢𝐥𝐝 𝐚𝐧𝐝 𝐂𝐨𝐝𝐞 𝐚𝐧𝐚𝐥𝐲𝐬𝐢𝐬
+3.1 Scan for secrets and credentials
+3.2 Software Bill of Materials (SBOM)
+3.2.1 Syft with Grype and Trivy
+3.2.2 OWASP Dependency-Check
+3.3 Static Application Security Testing (SAST)
+3.4 Unit test
+3.5 Dockerfile static scanning
+3.6 Container image scan
+3.7 Container image signing and verifying 
+3.8 Container image validation test
+
+🔹4-𝐓𝐞𝐬𝐭
+4.1 Smoke test
+4.2 API testing
+4.3 Dynamic application security testing (DAST)
+
+🔹5-𝐃𝐞𝐩𝐥𝐨𝐲
+5.1 Static scan of Kubernete manifest file or Helm chart
+5.2 Pre-deploy policy check Kubernete manifest YAML file
+5.3 kube-bench for CIS scan
+5.4 IaC scanning:
+
+🔹6-𝐌𝐨𝐧𝐢𝐭𝐨𝐫 𝐚𝐧𝐝 𝐀𝐥𝐞𝐫𝐭
+Monitoring and Alerting
+6.1 Metrics monitoring
+6.2 Log monitoring
+6.3 Alerting
+```
