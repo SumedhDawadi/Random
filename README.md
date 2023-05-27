@@ -58,6 +58,23 @@ curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 → chmod +x linpeas.sh 
 → ./linpeas.sh
 ```
+### Enumerating SMB
+```bash
+enum4linux 192.168.1.40
+```
+```bash
+nmap --script smb-os-discovery IP-Address
+```
+```bash
+smbmap -H IP-Address
+```
+```bash
+smbclient -L IP-Address
+smbclient //IP-Address/User-Found-In-Disk
+```
+```bash
+net view \\IP-Address /All
+```
 ###  𝐖𝐡𝐚𝐭 𝐝𝐨𝐞𝐬 𝐃𝐞𝐯𝐒𝐞𝐜𝐎𝐩𝐬 𝐂𝐈/𝐂𝐃 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 𝐥𝐨𝐨𝐤 𝐥𝐢𝐤𝐞?
 
 ```bash
