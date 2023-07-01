@@ -75,6 +75,17 @@ smbclient //IP-Address/User-Found-In-Disk
 ```bash
 net view \\IP-Address /All
 ```
+### Change DNS for blocking malware and adult content
+#### Malware and Adult content
+```bash
+Primary DNS : 1.1.1.3
+Secondary DNS : 1.0.0.3
+```
+#### Malware Blocking Only
+```bash
+Primary DNS : 1.1.1.2
+Secondary DNS : 1.0.0.2
+```
 ###  𝐖𝐡𝐚𝐭 𝐝𝐨𝐞𝐬 𝐃𝐞𝐯𝐒𝐞𝐜𝐎𝐩𝐬 𝐂𝐈/𝐂𝐃 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞 𝐥𝐨𝐨𝐤 𝐥𝐢𝐤𝐞?
 
 ```bash
